@@ -1,0 +1,49 @@
+<!-- Coder : SM -->
+<!-- Date : Oct 20 '19 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PlayMe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="score">
+            <div class="player-section">
+                <p>Player</p>
+                <div class="player_score">0</div>
+            </div>
+            <div class="pc-section">
+                <div class="pc_score">0</div>
+                <p>Computer</p>
+            </div>
+        </section>
+        <section class="fadeout">
+            <div class="game-name">Rock Paper Scissors</div>
+            <button class="btn" id="play_btn">Let's Play</button>
+        </section>
+        <section class="fadein">
+            <div class="name">Choose Your Turn</div>
+            <div class="img">
+                <img class="player-hand" src="./assets/rock.png" alt="img">
+                <img class="pc-hand" src="./assets/rock.png" alt="img">
+            </div>
+            <div class="choose-buttons">
+                <button id="rock" class="btn" value='1'>Rock</button>
+                <button id="paper" class="btn btn-2" value='2'>Paper</button>
+                <button id="scissors" class="btn" value='3'>Scissors</button>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+<script src="./index.js"></script>
+
+</html>

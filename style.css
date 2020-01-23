@@ -1,0 +1,179 @@
+ /* Coder : SM 
+ Date : Oct 20 '19  */
+ @import url('https://fonts.googleapis.com/css?family=Modak|Righteous&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(151, 221, 253), rgb(112, 28, 246));
+    position: relative;
+}
+.score{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.score > div{
+    border: 1px solid black;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(#DAFF01,#58FF01);
+    background:linear-gradient(rgb(107, 243, 175),rgb(36, 253, 253));
+    border: 0;
+    box-shadow: 0 0 15px 0 ;
+    font-family: 'Modak', cursive;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: all 250ms;
+}
+.score > div:hover{
+    box-shadow: 0 0 25px 0 ;
+    
+}
+.player-section div{
+    margin-left: 30px;
+}
+.pc-section div{
+    margin-right: 30px;
+}
+/*========== score section ends ============ */
+
+.fadeout{
+    text-align: center;
+    font-family: 'Modak', cursive;
+    font-size: 3.9rem;
+    height: 70vh;
+    opacity: 1;
+    transition :all 550ms;
+    
+}
+.btn{
+    padding: 10px 30px;
+    font-family: 'Righteous', cursive;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-top:  15rem;
+    border-radius: 12px;
+    cursor: pointer;
+    background:linear-gradient(rgb(107, 243, 175),rgb(36, 253, 253));
+    border: 0;
+    box-shadow: 0 0 10px 0;
+    transition: all 250ms;
+}
+.btn:hover{
+    box-shadow: 0 0 25px 0;
+    transform: scale(1.01);
+    
+}
+/*========== fade-out section ends ============ */
+.fadein{
+    background: transparent;
+    position: absolute;
+    height: 70vh;
+    width: 100%;
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    z-index: -1;
+    transition :all 750ms;
+}
+.fadein .name{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 3.9rem;
+}
+.img{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em ;
+}
+
+.player-hand{
+    transform: rotateY(180deg);
+}
+.choose-buttons{
+    margin-top: -9rem;
+    margin-bottom: 4rem;
+}
+        
+.choose-buttons .btn-2{
+    margin: 0px 70px;
+}
+
+/* animation */
+
+@keyframes shakePlayer {
+    0% {
+      transform: rotateY(180deg) translateY(0px);
+    }
+    15% {
+      transform: rotateY(180deg) translateY(-50px);
+    }
+    25% {
+      transform: rotateY(180deg) translateY(0px);
+    }
+    35% {
+      transform: rotateY(180deg) translateY(-50px);
+    }
+    50% {
+      transform: rotateY(180deg) translateY(0px);
+    }
+    65% {
+      transform: rotateY(180deg) translateY(-50px);
+    }
+    75% {
+      transform: rotateY(180deg) translateY(0px);
+    }
+    85% {
+      transform: rotateY(180deg) translateY(-50px);
+    }
+    100% {
+      transform: rotateY(180deg) translateY(0px);
+    }
+  }
+  
+  @keyframes shakeComputer {
+    0% {
+      transform: translateY(0px);
+    }
+    15% {
+      transform: translateY(-50px);
+    }
+    25% {
+      transform: translateY(0px);
+    }
+    35% {
+      transform: translateY(-50px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    65% {
+      transform: translateY(-50px);
+    }
+    75% {
+      transform: translateY(0px);
+    }
+    85% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+
+
